@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOTE SEU AMIGO DAS RUAS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #004d40;
+        }
+        header {
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #f57f17;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            color: #c6a700;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .news-item {
+            background: #ffffff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #004d40;
+        }
+        footer {
+            background-color: #00796b;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #f57f17;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c6a700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notícias sobre Cães de Rua</h1>
+    </header>
+    <nav>
+        <a href="index.html">Notícias</a>
+        <a href="SobreNós.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+        
+    </nav>
+    <div class="container">
+        <section id="news">
+            <h2>Últimas Notícias</h2>
+            <div class="news-item">
+                <h3>Campanha de Adoção de Cães de Rua</h3>
+                <p>Hoje foi lançada uma nova campanha para promover a adoção de cães de rua. O objetivo é encontrar lares para os cães que vivem nas ruas e oferecer uma melhor qualidade de vida para eles.</p>
+            </div>
+            <div class="news-item">
+                <h3>Voluntários Prestam Atendimento a Cães Abandonados</h3>
+                <p>Um grupo de voluntários está oferecendo atendimento médico e alimentação para cães abandonados em vários bairros da cidade. A iniciativa visa reduzir o sofrimento desses animais e encontrar soluções de longo prazo.</p>
+            </div>
+        </section>
+        <section id="help">
+            <h2>Como Ajudar</h2>
+            <p>Existem várias maneiras de ajudar os cães de rua. Aqui estão algumas sugestões:</p>
+            <ul>
+                <li>Adotar um cão de rua e oferecer um lar amoroso.</li>
+                <li>Doar alimentos e suprimentos para abrigos de animais.</li>
+                <li>Voluntariar seu tempo em organizações que cuidam de cães abandonados.</li>
+                <li>Divulgar informações sobre campanhas de adoção e eventos de arrecadação.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Se você tiver alguma dúvida ou quiser se envolver, entre em contato conosco:</p>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Notícias sobre Cães de Rua. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
